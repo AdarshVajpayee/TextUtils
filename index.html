@@ -83,7 +83,7 @@
 </div>
 
 <div class="container">
-  <form action="/analyse.html" method="post"> {% csrf_token %}
+  <form action="/analyse" method="post"> {% csrf_token %}
 <div class="mb-3">
   <label for="exampleFormControlTextarea1" class="form-label">Enter Your Text Here And Let Text Utils Do The Magic</label>
   <textarea name ="text" class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
@@ -104,7 +104,7 @@
   <input class="form-check-input"  name = "extraspaceremover" type="checkbox" role="switch">
   <label class="form-check-label">Extra Space Remover</label>
 </div>
-  <button type="submit" class="btn btn-dark mt-2">Analyse Text</button>
+  <button type="submit" class="btn btn-dark mt-2"><a href="analyse.html">Analyse Text</a></button>
     </form>
 </div>
 
